@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "zh-CN"
-title                    : "XINXIN's HomePage"
+title                    : "XINXIN"
 title_separator          : "-"
 name                     : "xinxinxin"
 description              : "study,read or life."
@@ -65,7 +65,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
+search                   : true
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
@@ -110,7 +110,7 @@ author:
   name             : "小甜饼制作机"
   avatar           : "/assets/images/picture1.jpg"
   bio              : "写最丑的代码和最甜的小说。"
-  location         : "311 to 魔都 now in上海"
+  location         : "311 to 魔都 now in 北京"
   email            : "imxinxinxin@hotmail.com"
   github           : "imxinxinxin"
   links:
@@ -234,6 +234,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-seo-tag
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -292,6 +293,53 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+      
+# _docs新添加的侧边栏
+  # - scope:
+      # path: ""
+      # type: docs
+    # values:
+      # sidebar:
+        # nav: "docs"
+      
+      
+#_kind
+  - scope:
+      path: ""
+      type: kind
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true      
+      
+      
+#Collections
+# collections:
+   # learn:
+     # output:ture
+     # permalink:/:collection/:path/
+   # books:
+     # output:ture
+     # permalink:/:collection/:path/
+   # life:
+     # output:ture
+     # permalink:/:collection/:path/
+   # kind:
+     # output:ture
+     # permalink:/:collection/:path/
+
+links1:
+  - name:    "阅读"
+    url:     /reads/
+    type:    reads
+    external: false
+
+
+blog_1:    reads
+
